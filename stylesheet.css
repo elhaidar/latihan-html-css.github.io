@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+span {
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #404146;
+  color: white;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  padding-right: 40px;
+}
+
+.logo h3 {
+  letter-spacing: 4px;
+  font-weight: bolder;
+}
+
+.header-nav li {
+  margin-right: 20px;
+}
+
+.header-nav li a {
+  color: white;
+  display: block;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 20px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.main {
+  color: #404146;
+}
+
+.hero {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.hero h1 {
+  font-size: 80px;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.hero h2 {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.hero img {
+  width: 200px;
+}
+
+.about {
+  background-color: #f4f4f4;
+  padding: 8%;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 5%;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.about p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.projects {
+  padding: 8%;
+  text-align: center;
+}
+
+.project-content {
+  width: 100%;
+  display: flex;
+}
+
+.project-item img {
+  width: 60%;
+  margin-bottom: 8%;
+}
+
+.contact {
+  background-color: #f4f4f4;
+  padding: 8%;
+  text-align: center;
+}
+
+.email-input {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 0;
+  margin-bottom: 3%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.contact textarea {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 3%;
+}
+
+.btn-submit {
+  width: 30%;
+  background-color: #f7e989;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  background-color: #7c7d82;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav a {
+  color: white;
+  display: block;
+  padding: 10px 0;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .header-nav li {
+    margin-right: 10px;
+  }
+  .header-nav li a {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 670px) {
+  header {
+    padding: 20px;
+  }
+  .logo {
+    padding-right: 20px;
+  }
+  .logo h3 {
+    font-size: 16px;
+  }
+  .header-nav li {
+    margin-right: 10px;
+  }
+  .header-nav li a {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .hero h1 {
+    font-size: 56px;
+  }
+  .hero h2 {
+    font-size: 28px;
+  }
+}
