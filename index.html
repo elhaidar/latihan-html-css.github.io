@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Ninja Ken</title>
   </head>
   <body>
@@ -43,6 +47,11 @@
         </p>
       </div>
       <div class="projects" id="projects">
+        <div id="myModal">
+          <div id="modalContent"></div>
+          <button id="prev" onclick="prev()">&lt;</button>
+          <button id="next" onclick="next()">&gt;</button>
+        </div>
         <h3 class="section-title">Proyek Contoh</h3>
         <div class="project-content">
           <div class="project-item">
@@ -57,24 +66,44 @@
             <img src="3.png" alt="" />
             <p>Image 3</p>
           </div>
+          <div class="project-item">
+            <img src="1.png" alt="" />
+            <p>Image 4</p>
+          </div>
+          <div class="project-item">
+            <img src="2.png" alt="" />
+            <p>Image 5</p>
+          </div>
+          <div class="project-item">
+            <img src="3.png" alt="" />
+            <p>Image 6</p>
+          </div>
         </div>
       </div>
-      <div class="contact" id="contact">
+      <form class="contact" name="contact">
         <h3 class="section-title">Hubungi Saya</h3>
         <input
           type="text"
           placeholder="Email (Diperlukan)"
           class="email-input"
+          name="emailInput"
         />
+        <span id="info-email"
+          ><i class="bx bx-info-circle"></i>Email tidak valid!</span
+        >
         <textarea
           name=""
-          id=""
+          id="messageInput"
           cols="30"
           rows="5"
           placeholder="Message (Diperlukan)"
+          name="messageInput"
         ></textarea>
+        <span id="info-message"
+          ><i class="bx bx-info-circle"></i>Message diperlukan!</span
+        >
         <input type="submit" value="Kirim" class="btn-submit" />
-      </div>
+      </form>
     </div>
     <footer>
       <div class="logo">
@@ -88,5 +117,6 @@
         </ul>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
